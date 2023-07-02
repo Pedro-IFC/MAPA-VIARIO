@@ -1,5 +1,5 @@
 import sys
-mapa =[['O', '=', '=', '+', '=', '=', '=', '=', '=', '1'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', '+', '=', '=', '=', '=', '=', '+'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '#', '#', 'v', '#', '#', '#', '#', '#', '"'], ['^', '<', '<', '2', '<', '<', '<', '<', '<', '+']]
+mapa =[['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '1', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'O', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '^', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['2', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '+', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '^', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['O', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '<', '+', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '+', '=', '=', '=', '=', '=', '=', 'X', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '^', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '^', '<', '<', '<', '<', '<', '<', '3', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '^', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['4', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '+', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '+', '>', '>', '>', '>', '>', '>', '>', '>', '>', 'o'], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', '>', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['5', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', '=', 'v', '#', '#', '#', '#', '#', '#', '#', '#', '#', ''], ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '>', '>', '>', '>', '>', '>', '>', '>', '>', 'O', '']]
 
 def printarComandos():
     print("==============================================================")
@@ -13,9 +13,9 @@ def printarComandos():
 def printarMapa(posicao=0):
     print("Mapa:")
     print("==============================================================\n")
-    for i in range(0,10):
-        line = ""
-        for j in range(0,10):
+    for i in range(len(mapa)):
+        line=""
+        for j in range(len(mapa[i])):
             if(posicao==0):
                 line = line + (mapa[i][j])
             else:
@@ -26,13 +26,19 @@ def printarMapa(posicao=0):
         print(line)
 
 def posicaoInicial():
-    initial = int(input("Escolha onde Iniciar (1 ou 2): \n"))
-    while(initial >2 or initial <1):
-        initial = int(input("Escolha onde Iniciar (1 ou 2): \n"))
+    initial = int(input("Escolha onde Iniciar (1,2,3,4 ou 5): \n"))
+    while(initial >5 or initial <1):
+        initial = int(input("Escolha onde Iniciar (1,2,3,4 ou 5): \n"))
     if(initial == 1):
-        posicao= [0,9]
+        posicao= [0,30]
     elif(initial == 2):
-        posicao=[9, 3]
+        posicao=[2, 0]
+    elif(initial == 3):
+        posicao=[5, 60]
+    elif(initial == 4):
+        posicao=[7, 0]
+    elif(initial == 5):
+        posicao=[12, 0]
     return posicao
 
 def validarMovimento(movimentacao, posicaoAtual):
@@ -50,14 +56,14 @@ def validarMovimento(movimentacao, posicaoAtual):
 
 def foraLimite(posicao, posicaoAtual):
     if(mapa[posicaoAtual[0]][posicaoAtual[1]]!="O"):
-        if(int(posicao[0]) < 0 or int(posicao[0]) > 9 or int(posicao[1]) < 0 or int(posicao[1]) > 9):
+        if(int(posicao[0]) < 0 or int(posicao[0]) > 13 or int(posicao[1]) < 0 or int(posicao[1]) > 60):
             return True
         else:
             return False
     else:
         if(int(posicao[0]) < 0 or int(posicao[0]) > 9 or int(posicao[1]) < 0 or int(posicao[1]) > 9):
             print("\n" * 100)
-            print("Você saiu da cidade, fim de jogo")
+            print("Você saiu da cidade")
             continuar = input("Pressione enter para sair")
             sys.exit()
         else:
@@ -111,7 +117,38 @@ def validaDirecao(movimentacao, posicaoAtual):
         else:
             return True
     elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=="+"):
-        return False
+        futuro = validarMovimento(movimentacao, posicaoAtual)
+        futuro2 = validarMovimento(movimentacao, futuro)
+        if(foraLimite(futuro, futuro2)):
+            return True
+        elif(validaColisao(futuro)):
+            return True
+        else:
+            if(mapa[futuro[0]][futuro[1]]=="<"):
+                if(movimentacao == "a"):
+                    return False
+                else:
+                    return True
+            elif(mapa[futuro[0]][futuro[1]]==">"):
+                if(movimentacao == "d"):
+                    return False
+                else:
+                    return True
+            elif(mapa[futuro[0]][futuro[1]]=="v"):
+                if(movimentacao == "s"):
+                    return False
+                else:
+                    return True
+            elif(mapa[futuro[0]][futuro[1]]=="^"):
+                if(movimentacao == "w"):
+                    return False
+                else:
+                    return True
+            elif(mapa[futuro[0]][futuro[1]]=="="):
+                if(movimentacao == "a" or movimentacao =="d"):
+                    return False
+                else:
+                    return True
     elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=='"'):
         if(movimentacao == "w" or movimentacao =="s"):
             return False
@@ -135,21 +172,20 @@ while(True):
     while(validarMovimento(movimentacao, posicaoAtual)==posicaoAtual):
         print("\n" * 100)
         print("Comando errado, tente novamente")
+        continuar = input("Pressione enter para tentar novamente")
         print("\n" * 100)
         printarMapa(posicaoAtual)
         movimentacao = input("Para onde ir?")
     posicaoFutura = validarMovimento(movimentacao, posicaoAtual)
     if(foraLimite(posicaoFutura, posicaoAtual)):
         print("\n" * 100)
-        print("Você saiu do mapa")
-        continuar = input("Pressione enter para sair")
-        sys.exit()
+        print("Você sairá do mapa, tente novamente")
+        continuar = input("Pressione enter para tentar novamente")
     else:
         if(validaColisao(posicaoFutura)):
             print("\n" * 100)
-            print("Você colidiu com um objeto, você perdeu");
-            continuar = input("Pressione enter para sair")
-            sys.exit()
+            print("Você colidiu com um objeto, tente novamente");
+            continuar = input("Pressione enter para tentar novamente")
         else:
             if(validaDirecao(movimentacao, posicaoAtual)):
                 print("\n" * 100)
