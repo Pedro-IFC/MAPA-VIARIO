@@ -77,12 +77,28 @@ def validaColisao(posicaoFutura):
 
 def validaDirecao(movimentacao, posicaoAtual):
     if(mapa[posicaoAtual[0]][posicaoAtual[1]]=="2"):
-        if(movimentacao == "a"):
+        if(movimentacao == "d"):
+            return False
+        else:
+            return True
+    elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=="3"):
+        if(movimentacao == "e"):
+            return False
+        else:
+            return True
+    elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=="4"):
+        if(movimentacao == "d"):
+            return False
+        else:
+            return True
+        
+    elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=="5"):
+        if(movimentacao == "d"):
             return False
         else:
             return True
     elif(mapa[posicaoAtual[0]][posicaoAtual[1]]=="1"):
-        if(movimentacao == "s" or movimentacao == "a"):
+        if(movimentacao == "s"):
             return False
         else:
             return True
